@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+ <script type="text/javascript" >
+   function cyantheme()
+   {
+    document.bgColor="cyan";
+   }
+
+   function yellowtheme()
+   {
+    document.bgColor="yellow";
+   }
+
+   function redtheme()
+   {
+    document.bgColor="red";
+   }
+
+   function blacktheme()
+   {
+    document.bgColor="black";
+   }
+
+   function bluetheme()
+   {
+    document.bgColor="blue";
+   }
+
+   function add()
+   {
+    const a=parseInt(txtA.value);
+    const b=parseInt(txtB.value);
+    txtAns.value=a+b;
+    alert(txtAns.value);
+   }
+   function sub()
+   {
+    const a=parseInt(txtA.value);
+    const b=parseInt(txtB.value);
+    txtAns.value=a-b;
+    alert(txtAns.value);
+   }
+   function multi()
+   {
+    const a=parseInt(txtA.value);
+    const b=parseInt(txtB.value);
+    txtAns.value=a*b;
+    alert(txtAns.value);
+   }
+   function div()
+   {
+    const a=parseInt(txtA.value);
+    const b=parseInt(txtB.value);
+    txtAns.value=a/b;
+    alert(txtAns.value);
+   }
+   function getarea(){
+    let radius=parseInt(document.getElementById('radius').value)
+    let ans = document.getElementById('ans');
+    ans.value = 2*3.14*radius;}
+</script>
+<body>
+  <div align="center">
+    <input type="text" value="0" id="radius">
+        <input type="text" value="0" id="ans" readonly>
+        <button onclick="getarea()">
+              getarea
+        </button><br><br><br>
+      </div>
+  <div align="center">
+  enter value of A<input type="text" value="0" width="200px" id="txtA" style="background-color: bisque;"><br><br><br>
+  enter value of B<input type="text" value="0" width="200px" id="txtB" style="background-color: bisque;"><br><br><br>
+ Ans<input type="text" value="0" width="200px" id="txtAns" style="background-color: bisque;" readonly><br><br><br>
+  </div>
+  <div align="center">
+    <input type="button" id="bt1" onclick="add()" value="+" style="background-color:white;" />&nbsp;&nbsp;
+    <input type="button" id="bt2" onclick="sub()" value="-" style="background-color:white;" />&nbsp;&nbsp;
+    <input type="button" id="bt3" onclick="multi()" value="*" style="background-color:white;" />&nbsp;&nbsp;
+    <input type="button" id="bt4" onclick="div()" value="/" style="background-color:white;" />&nbsp;&nbsp;<br><br><br>
+</div>
+<div align="center">
+ <input type="button" onclick="cyantheme()"; width=100px height=100px style="background-color:cyan;" />&nbsp;&nbsp;
+  <input type="button" onclick="yellowtheme()"; width=100px height=100px style="background-color:yellow;" />&nbsp;&nbsp;
+  <input type="button" onclick="redtheme()"; width=100px height=100px style="background-color:red;" />&nbsp;&nbsp;
+  <input type="button" onclick="blacktheme()"; width=100px height=100px style="background-color:black;" />&nbsp;&nbsp;
+  <input type="button" onclick="bluetheme()"; width=100px height=100px style="background-color:blue;" />&nbsp;&nbsp;
+</div>
+</body>
+</html>
